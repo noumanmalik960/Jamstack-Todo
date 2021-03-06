@@ -1,9 +1,9 @@
 const React = require('react')
 const { ThemeProvider } = require('theme-ui')
-const { dark } = require('@theme-ui/presets')
+const { deep } = require('@theme-ui/presets')
 
 const tokens = {
-  ...dark,
+  ...deep,
   sizes: { container: 1024 }
 }
 

@@ -11,7 +11,8 @@ const Index = () => {
     <Container>
       <Flex sx={{ flexDirection: 'column' }}>
         <Heading as="h1" sx={{ p: 10 }}>Add your Todo to track your tasks!</Heading>
-        <Button onClick={() => netlifyIdentity.open()}>Login</Button>
+        <Button onClick={() => netlifyIdentity.open()}>Login</Button><br />
+        <Button onClick={() => console.log(netlifyIdentity.currentUser())}>Log current user</Button>
       </Flex>
     </Container>
   )
