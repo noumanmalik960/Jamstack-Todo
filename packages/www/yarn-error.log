@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Users\nouma\AppData\Local\nvs\node\14.16.0\x64\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @theme-ui/types
+  C:\Users\nouma\AppData\Local\nvs\node\14.16.0\x64\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @react/router
 
 PATH: 
-  C:\Users\nouma\AppData\Local\nvs\node\14.16.0\x64;C:\Users\nouma\bin;E:\Git\mingw64\bin;E:\Git\usr\local\bin;E:\Git\usr\bin;E:\Git\usr\bin;E:\Git\mingw64\bin;E:\Git\usr\bin;C:\Users\nouma\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;E:\Git\cmd;C:\Program Files (x86)\Yarn\bin;E:\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\nouma\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\nouma\AppData\Local\Programs\Python\Python38;C:\Users\nouma\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\nouma\AppData\Local\GitHubDesktop\bin;C:\Users\nouma\AppData\Local\Yarn\bin;C:\Users\nouma\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nouma\AppData\Local\nvs;E:\Git\usr\bin\vendor_perl;E:\Git\usr\bin\core_perl
+  C:\Users\nouma\AppData\Local\nvs\node\14.16.0\x64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Git\cmd;C:\Program Files (x86)\Yarn\bin\;E:\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\nouma\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\nouma\AppData\Local\Programs\Python\Python38\;C:\Users\nouma\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\nouma\AppData\Local\GitHubDesktop\bin;C:\Users\nouma\AppData\Local\Yarn\bin;C:\Users\nouma\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nouma\AppData\Local\nvs\;
 
 Yarn version: 
   1.22.4
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@theme-ui%2ftypes: Not found
+  Error: https://registry.yarnpkg.com/@react%2frouter: Not found
       at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66096:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
       at Request.emit (events.js:315:20)
@@ -39,7 +39,10 @@ npm manifest:
     },
     "dependencies": {
       "@theme-ui/presets": "^0.3.5",
+      "@types/theme-ui": "^0.3.7",
       "gatsby": "^2.32.8",
+      "gatsby-plugin-create-client-paths": "^3.0.0",
+      "netlify-identity-widget": "^1.9.1",
       "react": "^17.0.1",
       "react-dom": "^17.0.1",
       "theme-ui": "^0.3.5"
@@ -1834,6 +1837,11 @@ Lockfile:
     dependencies:
       "@types/node" "*"
   
+  "@types/netlify-identity-widget@^1.9.1":
+    version "1.9.1"
+    resolved "https://registry.yarnpkg.com/@types/netlify-identity-widget/-/netlify-identity-widget-1.9.1.tgz#12de68a25bae286211bd38eaaeb5cde92f39b710"
+    integrity sha512-xpFJL+1lQN2L+TLuX2tKyUlAcXhZuTEFGzsmaqjtm/sVY8YdPjMhT/iHoxJqeZQYZ5TtKtAlZqqdbEAIUvJwHQ==
+  
   "@types/node-fetch@2":
     version "2.5.8"
     resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.8.tgz#e199c835d234c7eb0846f6618012e558544ee2fb"
@@ -1889,6 +1897,43 @@ Lockfile:
     dependencies:
       "@types/glob" "*"
       "@types/node" "*"
+  
+  "@types/styled-system@*":
+    version "5.1.10"
+    resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.10.tgz#dcf5690dd837ca49b8de1f23cb99d510c7f4ecb3"
+    integrity sha512-OmVjC9OzyUckAgdavJBc+t5oCJrNXTlzWl9vo2x47leqpX1REq2qJC49SEtzbu1OnWSzcD68Uq3Aj8TeX+Kvtg==
+    dependencies:
+      csstype "^3.0.2"
+  
+  "@types/styled-system__css@*":
+    version "5.0.14"
+    resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.14.tgz#97559d823216d475f716fb5b8dd1766f2d3eeafa"
+    integrity sha512-dvhSQ5upz6TqiQmWLNF0sqdoL5nTomza58vtTSklpE9lDS+5w/ew8PQ+HPSRaXMGrmPGUiL7F0vwryVdxHWfpA==
+    dependencies:
+      csstype "^3.0.2"
+  
+  "@types/theme-ui@*", "@types/theme-ui@^0.3.7":
+    version "0.3.7"
+    resolved "https://registry.yarnpkg.com/@types/theme-ui/-/theme-ui-0.3.7.tgz#67346df27d02045c7f06f9684c88e3a5622a456d"
+    integrity sha512-4hzDlDhlFYmOdXBLZTbO4N2hWfuGo1N77AcIMaSyDGEyFbdZSpelMLTkEtNzYT8yQWIl3x0WITiBzjqkfc6dUg==
+    dependencies:
+      "@emotion/serialize" "^0.11.15"
+      "@types/react" "*"
+      "@types/styled-system" "*"
+      "@types/styled-system__css" "*"
+      "@types/theme-ui__components" "*"
+      csstype "^3.0.2"
+  
+  "@types/theme-ui__components@*":
+    version "0.3.0"
+    resolved "https://registry.yarnpkg.com/@types/theme-ui__components/-/theme-ui__components-0.3.0.tgz#d9ec0c49b7d2877230cd23fbd82dbeb634725f97"
+    integrity sha512-nFQ3rNWgn1Pmhtv/z8s/uPI8f/bkOT0iS619PIdpsaQ+keloYUUbCKRogjPunnDcI/Xsr56wiC6bpANWJQIRAQ==
+    dependencies:
+      "@emotion/core" "^10.0.0"
+      "@emotion/styled" "^10.0.0"
+      "@types/react" "*"
+      "@types/styled-system" "*"
+      "@types/theme-ui" "*"
   
   "@types/tmp@^0.0.33":
     version "0.0.33"
@@ -5521,6 +5566,13 @@ Lockfile:
       lodash "^4.17.20"
       micromatch "^4.0.2"
   
+  gatsby-plugin-create-client-paths@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/gatsby-plugin-create-client-paths/-/gatsby-plugin-create-client-paths-3.0.0.tgz#f4293924e03a714d4bfa7c452d3947729808bd21"
+    integrity sha512-frWerYXgrb0Q/0O+BlnbLNwmnDmnF35Dwefoug31y/PI4AVH+FSfMcnkOA+PI7bAuCkPv7z0rKQqDc9CJsuFOA==
+    dependencies:
+      "@babel/runtime" "^7.12.5"
+  
   gatsby-plugin-page-creator@^2.10.1:
     version "2.10.1"
     resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.10.1.tgz#2b2e651d12a605d91047b99893fa41720e18b45d"
@@ -8026,6 +8078,11 @@ Lockfile:
     version "2.6.2"
     resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
     integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
+  
+  netlify-identity-widget@^1.9.1:
+    version "1.9.1"
+    resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.9.1.tgz#9e716c4b92b9f0cc041074eb86fc962f35295b46"
+    integrity sha512-9oIWjwUSdRk3SkREcZNjZaVuDDx9T/wSIXZNQsQeY4qoXic/FiXVEGgu2RU3IuA4OI3L2652xY1o+PpS03Ugaw==
   
   next-tick@1, next-tick@^1.1.0:
     version "1.1.0"
